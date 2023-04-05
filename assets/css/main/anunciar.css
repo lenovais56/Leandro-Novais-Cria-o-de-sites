@@ -1,0 +1,94 @@
+.anunciar {
+    background: url(../../img/mostrando-a-tela-em-branco-do-tablet.webp), #F37020;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0px 60px;
+    box-shadow: 0px 0px 40px #E3E3E3;
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    padding: 2em 1em;
+}
+
+.anunciar__lista {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.anunciar__item {
+    background: var(--preto-fundo);
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+}
+
+.anunciar__icon {
+    color: var(--branco);
+    filter: drop-shadow(0 0 8px var(--laranja));
+    font-size: 3em;
+}
+
+.anunciar__chamada {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;  
+}
+
+.anunciar__chamada--titulo {
+    text-shadow: 0px 0px 25px #000000;
+}
+
+.anunciar__chamada--titulo span {
+    color: var(--preto-fundo);
+    text-shadow: 0px 0px 20px var(--branco);
+}
+
+.btn__anunciar span{
+    font-size: 1em;
+}
+
+@media screen and (min-width: 768px){
+    .anunciar {
+        align-items: center;
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .anunciar {
+        gap: 2em;
+        max-width: 1200px;
+        width: 100%;
+    }
+
+    .anunciar__lista {
+        align-items: stretch;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 2em;
+    }
+
+    .anunciar__item {
+        width: calc(100% / 3);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .anunciar__lista {
+        flex-wrap: nowrap;
+        gap: 1em;
+    }
+
+    .anunciar__item {
+        padding: 2em;
+        width: calc(100% / 4);
+    }
+
+    .anunciar__chamada{
+        width: 50%;
+    }
+}

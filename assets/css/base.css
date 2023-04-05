@@ -1,0 +1,102 @@
+/* Header */
+@import url(header/menu.css);
+
+/* Main */
+@import url(main/banner.css);
+@import url(main/solucoes.css);
+@import url(main/site.css);
+@import url(main/anunciar.css);
+@import url(main/sobre.css);
+@import url(main/cases.css);
+@import url(main/duvidas.css);
+@import url(main/contato.css);
+
+/* Footer */
+@import url(footer/rodape.css);
+
+/* Reset */
+@import url(reset.css);
+@import url(normalize.css);
+
+/* Icons */
+@import url(icons.css);
+
+/* Buttons */
+@import url(button/button.css);
+
+/* Animate Scroll */
+@import url(animateScroll.css);
+
+/* -------------------------------------------------*/
+
+@font-face {
+    font-family: 'Urbanist';
+    src: url(../fonts/Urbanist-Regular.ttf) format(truetype),
+    url(../fonts/Urbanist-Medium.ttf) format(truetype),
+    url(../fonts/Urbanist-Bold.ttf) format(truetype),
+}
+
+@font-face {
+    font-family: 'Urbanist-regular';
+    src: url(../fonts/Urbanist-Regular.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: 'Urbanist-medium';
+    src: url(../fonts/Urbanist-Medium.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: 'Urbanist-bold';
+    src: url(../fonts/Urbanist-Bold.ttf) format(truetype);
+}
+
+:root {
+    --azul: #2A82C0;
+    --azul-claro: #94B6D0;
+    --azul-escuro: #005274;
+    --branco: #F1F2F7;
+    --branco-sec: #d9d9d9;
+    --cinza: #9E958C;
+    --laranja: #FF6100;
+    --preto-fundo: #242021;
+    --verde-whatsapp: linear-gradient(225deg, #29A71A 0%, #29A71A 100%);
+    --vermelho: #e63636;
+}
+
+body {
+    background: var(--preto-fundo);
+    font-family: 'Urbanist';
+    padding: 1em 1em;
+    user-select: none;
+    overflow-x: hidden;
+}
+
+.content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo {
+    color: var(--branco);
+    font-family: 'Urbanist-bold';
+    font-size: 2.5em;
+}
+
+.subtitulo {
+    color: var(--branco);
+    font-family: 'urbanist-medium';
+    font-size: 1.5em;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    line-height: 1.3em;
+}
+
+.texto {
+    color: var(--branco-sec);
+    font-family: 'urbanist-regular';
+    font-size: 1em;
+    letter-spacing: 0.06em;
+    line-height: 1.4em;
+}

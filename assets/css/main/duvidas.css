@@ -1,0 +1,95 @@
+.duvidas {
+    background: var(--azul);
+    border-radius: 0 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin-bottom: 4em;
+    padding: 2em 1em;
+}
+
+.duvidas__lista {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.duvidas__item {
+    background: rgba(243, 112, 32, 0.8);
+    border-bottom: 2px solid #FFFFFF;
+    border-radius: .5em;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em .5em;
+    transition: 1s ease-in-out;
+}
+
+.duvidas__pergunta {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 900;
+    transition: 1s ease-in-out;
+}
+
+.duvidas__resposta {
+    height: 0px;
+    opacity: 0;
+    transition: .5s;
+    visibility: hidden;
+}
+
+.resposta__ativa {
+    background: var(--preto-fundo);
+    border-radius: 0.5em;
+    border-top: 1px solid var(--branco);
+    opacity: 1;
+    padding: 1em;
+    transition: .5s;
+    visibility: visible;
+}
+
+.duvidas__icon {
+    color: var(--branco);
+    transition: 1s;
+}
+
+.duvidas__conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+
+@media screen and (min-width: 768px){
+    .duvidas {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .duvidas {
+        align-items: center;
+        width: 100%;
+    }
+
+    .duvidas__titulo, .duvidas__lista, .duvidas__conteudo {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .duvidas{
+        width: 1024px;
+    }
+
+    .duvidas__titulo, .duvidas__lista, .duvidas__conteudo {
+        width: 70%;
+    }
+
+    .btn__duvidas {
+        padding: 1em 2em;
+        width: inherit;
+    }
+}

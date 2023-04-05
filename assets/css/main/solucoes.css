@@ -1,0 +1,81 @@
+.solucoes {
+    border-top: 1px solid var(--laranja);
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    padding: 4em 0;
+}
+
+.solucoes h3{
+    color: var(--laranja);
+    
+}
+
+.solucoes__lista {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.solucoes__item {
+    border-bottom: 1px solid var(--laranja);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    padding-bottom: 1em;
+}
+
+.solucoes__conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.solucoes__img {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px){
+    .solucoes {
+        align-items: center;
+    }
+
+    .solucoes__lista {
+        gap: 4em;
+        width: 80%;
+    }
+
+    .solucoes__item {
+        gap: 3em;
+        padding-bottom: 2em;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .solucoes{
+        background: url(../../img/imagem-de-close-up-de-programador-trabalhando-em-sua-mesa-no-escritorio.webp), #242021;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100vw;
+    }
+
+    .solucoes__lista {
+        max-width: 1200px;
+        width: 100%;
+    }
+    .solucoes__item {
+        align-items: center;
+        flex-direction: row;
+        padding-bottom: 3em;
+    }
+
+    .solucoes__conteudo {
+        gap: 2em;
+        width: 60%;
+    }
+
+    .solucoes__item:nth-child(2) .solucoes__conteudo, .solucoes__item:nth-child(4) .solucoes__conteudo{
+        order: 2;
+    }
+}

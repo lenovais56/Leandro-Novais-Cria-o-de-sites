@@ -1,0 +1,138 @@
+.cases {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 0 0 4em 0;
+}
+
+.cases .cases__titulo {
+    color: var(--laranja);
+}
+
+.cases__lista {
+    display: flex;
+    flex-direction: column;
+    gap: 3em; 
+    width: 100%;   
+}
+
+.cases__item {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.cases__item--conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.cases__open--img {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.cases__img {
+    border-radius: 1em;
+    box-shadow: 0 0 1em var(--laranja);
+    height: 100%;
+    width: 100%;
+}
+
+.cases__fechar {
+    display: none;
+}
+
+.cases__descricao {
+    display: none;
+}
+
+.cases__item:target {
+    align-items: center;
+    background: rgba(36, 32, 33, 0.9);;
+    box-shadow: 0 0 25em var(--laranja);
+    height: 95%;
+    left: 0;
+    overflow: auto;
+    padding: 1em 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 10;
+}
+
+.cases__item:target .cases__item--titulo {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.cases__item:target .cases__fechar {
+    color: var(--cinza);
+    display: block;
+}
+
+.cases__item:target .cases__img {
+    height: inherit;
+    width: inherit;
+}
+
+.cases__item:target .cases__descricao {
+    display: block;
+    padding-left: 1em;
+}
+
+.cases__link--site {
+    background: var(--azul);
+    border-radius: .5em;
+    font-weight: 700;
+    padding: .5em;
+}
+
+
+@media screen and (min-width: 768px){
+    .cases {
+        align-items: center;
+        width: 80%;
+    }
+
+    .cases__item:target .cases__img {
+        width: 70vw;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .cases {
+        max-width: 1200px;
+        width: 100%;
+    }
+
+    .cases__lista {
+        align-items: stretch;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .cases__item--conteudo {
+        display: flex;
+        flex-direction: row;
+        gap: 3em;
+    }
+
+    .cases__item {
+        width: calc(90% / 2);
+    }
+
+    .cases__item:target .cases__img {
+        width: inherit;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .cases__item {
+        width: calc(90% / 5);
+    }
+}

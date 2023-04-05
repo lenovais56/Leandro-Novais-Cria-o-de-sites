@@ -1,0 +1,61 @@
+.sobre {
+    background: url(../../img/imagem-de-close-up-de-programador-trabalhando-em-sua-mesa-no-escritorio\ 2.webp), #2A82C0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin: 4em 0;
+    padding: 2em 1em 0 1em;
+}
+
+.sobre__conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.sobre__texto span {
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.sobre__img {
+    filter: drop-shadow(0px 0px 10px var(--laranja));
+}
+
+.anunciar__chamada span {
+    text-shadow: 0px 0px 20px var(--azul);
+}
+
+@media screen and (min-width: 768px){
+    .sobre {
+        align-items: center;
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .sobre {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .sobre__conteudo {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .sobre {
+        gap: 2em;
+        justify-content: center;
+    }
+
+    .sobre__conteudo {
+        width: calc((1200px - 264px) - 2em);
+    }
+}

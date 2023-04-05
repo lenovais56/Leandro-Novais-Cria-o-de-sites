@@ -1,0 +1,128 @@
+.contato {
+    box-shadow: 0px 0px 30px #E3E3E3;
+    border-radius: 0 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 2em 1em;
+    margin-bottom: 3em;
+    width: calc(100% - 2em);
+}
+
+.contato h3 {
+    color: var(--laranja);
+}
+
+.contato__conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.contato__links a {
+    align-items: center;
+    display: flex;
+    font-size: 1em;
+    gap: .5em;
+}
+
+.contato__icon {
+    font-size: 1.5em;
+}
+
+.contato__links {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.contato__img {
+    filter: drop-shadow(0px 0px 10px var(--laranja));
+}
+
+.contato__formulario {
+    border-top: 1px solid var(--laranja);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding-top: 2em;
+}
+
+.contato__formulario--input {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.contato__formulario--input input, .contato__formulario--input textarea {
+    background: var(--azul-claro);
+    border-radius: .5em;
+    border: none;
+    padding: .5em;
+}
+
+.span__required {
+    color: var(--vermelho);
+    font-size: 1em;
+    font-weight: 700;
+    display: none;
+}
+
+.btn__formulario {
+    background: linear-gradient(88.87deg, #FF6100 21.47%, #FF873E 54.28%, #FF6100 78.76%);
+    box-shadow: 0px 0px 25px #E3E3E3;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    margin-top: 2em;
+    padding: .5em 0;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px){
+    .contato {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .contato {
+        width: 100%;
+    }
+
+    .contato__conteudo {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .contato__links {
+        width: 40%;
+    }
+
+    .contato__links a {
+        padding-left: 4em;
+    }
+
+    .contato__formulario {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .contato{
+        gap: 1em;
+        padding: 1em;
+        width: 1024px;
+    }
+
+    .contato__links {
+        gap: 1em;
+    }
+
+    .contato__formulario {
+        border-top: none;
+        gap: .5em;
+        padding: 0;
+    }
+}
